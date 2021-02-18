@@ -105,7 +105,7 @@ computed: {
   }
 }
 ```
-En comparación, una invocación de método **siempre** ejecutará la función cada vez que ocurre una re-renderizacion.
+En comparación, una invocación de método **siempre** ejecutará la función cada vez que ocurre una re-renderización.
 
 ¿Por qué necesitamos caché? Imagina que tenemos una costosa propiedad computada **A**, que requiere hacer un bucle a través de una gran matriz y hace muchos cálculos. Entonces podemos tener otras propiedades computadas que a su vez dependen de **A**. Sin caché, estaríamos ejecutando el captador de **A** muchas veces más de lo necesario. En los casos en que no desee el almacenamiento en caché, utilice un método en su lugar.
 
